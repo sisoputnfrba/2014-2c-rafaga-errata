@@ -1,6 +1,13 @@
 Ráfaga - Fe de errata
 =====================
 
+* Páginas 9, 12: 
+
+> Se desbloqueará este TCB de usuario ...
+> Cantidad de instrucciones que los hilos de usuario ...
+
+Por TCBs de usuario e hilos de usuario no se hace referencia a ULTs (User Level Threads) si no a diferenciar el TCB del Kernel con los TCBs que ejecutan los usuarios.
+
 * Pagina 8:
 
 > Ante la eventual desconexión de una CPU de un Proceso en ejecución, el planificador deberá notificar a la Consola del Proceso dicha excepción y abotar la ejecución
@@ -65,10 +72,3 @@ Deberia decir:
 > Cuando la MSP requiera asignar un marco a un segmento determinado y no lograra encontrar uno disponible deberá intercambiar a disco alguno de los que estén en uso para poder liberarlo y luego asignarlo a dicho segmento. Esta técnica es conocida como Swapping y permite extender el espacio total de memoria disponible más allá de los límites de la memoria principal, abstrayendo a los programadores de aplicaciones del hecho de que la memoria es limitada.
 
 Reemplazar cada ocurrencia de la palabra "segmento" por "página".
-
-* Páginas 9, 12: 
-
-> Se desbloqueará este TCB de usuario ...
-> Cantidad de instrucciones que los hilos de usuario ...
-
-Por TCBs de usuario e hilos de usuario no se hace referencia a ULTs si no a diferenciar el TCB del Kernel con los TCBs que ejecutan los usuarios.
