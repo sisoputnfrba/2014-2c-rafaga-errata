@@ -72,3 +72,9 @@ Deberia decir:
 > Cuando la MSP requiera asignar un marco a un segmento determinado y no lograra encontrar uno disponible deberá intercambiar a disco alguno de los que estén en uso para poder liberarlo y luego asignarlo a dicho segmento. Esta técnica es conocida como Swapping y permite extender el espacio total de memoria disponible más allá de los límites de la memoria principal, abstrayendo a los programadores de aplicaciones del hecho de que la memoria es limitada.
 
 Reemplazar cada ocurrencia de la palabra "segmento" por "página".
+
+* Página 12:
+
+> Los parámetros del archivo de configuración del Kernel son: Puerto de Escucha, Dirección IP de la MSP, Puerto de la MSP, Tamaño del Quantum, Ubicación Syscalls 
+
+Debería agregarse, además, el parámetro Tamaño del Stack.
