@@ -78,3 +78,9 @@ Reemplazar cada ocurrencia de la palabra "segmento" por "página".
 > Los parámetros del archivo de configuración del Kernel son: Puerto de Escucha, Dirección IP de la MSP, Puerto de la MSP, Tamaño del Quantum, Ubicación Syscalls 
 
 Debería agregarse, además, el parámetro Tamaño del Stack.
+
+* Página 7:
+
+> Campo: Base del Segmento de Código | Tipode dato: Numérico
+
+La base del segmento de código debería ser de tipo "Dirección"
