@@ -84,3 +84,11 @@ Debería agregarse, además, el parámetro Tamaño del Stack.
 > Campo: Base del Segmento de Código | Tipode dato: Numérico
 
 La base del segmento de código debería ser de tipo "Dirección"
+
+* Página 14:
+
+> Cada vez que el CPU quiera ejecutar una instrucción, realizará los siguientes pasos:
+>
+> 1. Cargar los registros de la CPU con los datos del TCB a ejecutar.
+
+La carga de los registros se deberá hacer sólo al recibir el TCB, y *no* en cada ciclo de instrucción.
