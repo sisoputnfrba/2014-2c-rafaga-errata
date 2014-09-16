@@ -92,3 +92,7 @@ La base del segmento de código debería ser de tipo "Dirección"
 > 1. Cargar los registros de la CPU con los datos del TCB a ejecutar.
 
 La carga de los registros se deberá hacer sólo al recibir el TCB, y *no* en cada ciclo de instrucción.
+
+* Páginas 24 y 25:
+
+El registro de flags **no deberá** implementarse. La operación `DIVR` deberá abortar con un fallo de división por cero en lugar de setear el flag de ZERO_DIV, y la operación `FLCL` queda deprecada y no deberá implementarse.
