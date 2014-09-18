@@ -90,3 +90,5 @@ La carga de los registros se deberá hacer sólo al recibir el TCB, y *no* en ca
 * Páginas 24 y 25:
 
 El registro de flags **no deberá** implementarse. La operación `DIVR` deberá abortar con un fallo de división por cero en lugar de setear el flag de ZERO_DIV, y la operación `FLCL` queda deprecada y no deberá implementarse.
+
+* Si bien los conceptos de **dirección lógica** y **dirección virtual** son distintos (ver la sección 2.1 de [Understanding the Linux Kernel](http://www.kerneltravel.net/downloads/UnderstandLinuxKernel2nd.pdf) y la sección 4.8.7 de [este otro documento](http://users.utcluj.ro/~baruch/book_ssce/SSCE-Intel-Memory.pdf)), a lo largo del enunciado (y en algunos otros documentos, como el Operating Systems Concepts de Silberschatz) ambos términos se usan indistintamente para referirse al mismo concepto.
