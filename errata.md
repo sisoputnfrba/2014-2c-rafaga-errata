@@ -9,9 +9,9 @@ Ráfaga - Fe de errata
 
 * Páginas 15, 16: En la sección de *Archivo de Configuración*, falta agregar un parametro:
 
-  RETARDO (Retardo de Instrucción, numérico): Tiempo en milisegundos que el Proceso CPU debe esperar luego de ejecutar cada instrucción.
+  `RETARDO` (Retardo de Instrucción, numérico): Tiempo en milisegundos que el Proceso CPU debe esperar luego de ejecutar cada instrucción.
   
-  Por ejemplo: "RETARDO=1000" Indica un retardo de 1000 milisegundos.
+  Por ejemplo: `RETARDO=1000` Indica un retardo de 1000 milisegundos.
 
 
 ### 18/09/2014
