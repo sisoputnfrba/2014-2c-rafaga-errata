@@ -1,6 +1,21 @@
 Ráfaga - Fe de errata
 =====================
 
+### 03/11/2014
+
+* El PID del TCB en modo Kernel (TCB KM) deberá ser conocido por los Procesos Kernel y CPU, por ejemplo PID = 0 (cero). De esta forma la CPU puede acceder al especio de direcciones del TCB KM cuando lo requiera.
+
+* Cuando la CPU reciba un TCB en modo Kernel (KM activado) deberá realizar todas las **lecturas/escrituras** sobre la MSP utilizando el PID default del Kernel (ver aclaración más arriba), y no el PID indicado por el TCB en cuestion.
+
+* Páginas 15, 16: En la sección de *Archivo de Configuración*, falta agregar un parametro:
+
+  RETARDO (Retardo de Instrucción, numérico): Tiempo en milisegundos que el Proceso CPU debe esperar luego de ejecutar cada instrucción.
+  
+  Por ejemplo: "RETARDO=1000" Indica un retardo de 1000 milisegundos.
+
+
+### 18/09/2014
+
 * Páginas 9, 12: 
 
 > Se desbloqueará este TCB de usuario ...
