@@ -1,11 +1,15 @@
 Ráfaga - Fe de errata
 =====================
 
+### 16/11/2014
+
+* La segunda aclaracion del 03/11/2014 esta incompleta, debería leerse asi: Cuando la CPU reciba un TCB en modo Kernel (KM activado) deberá realizar todas las **lecturas/escrituras** sobre la MSP utilizando el PID default del Kernel (ver aclaración más arriba), y no el PID indicado por el TCB en cuestion. **Las unicas excepciones son OUTC e INNC, que actuan sobre la memoria del proceso de usuario que invocó la llamada al sistema.**
+
 ### 03/11/2014
 
 * El PID del TCB en modo Kernel (TCB KM) deberá ser conocido por los Procesos Kernel y CPU, por ejemplo PID = 0 (cero). De esta forma la CPU puede acceder al especio de direcciones del TCB KM cuando lo requiera.
 
-* Cuando la CPU reciba un TCB en modo Kernel (KM activado) deberá realizar todas las **lecturas/escrituras** sobre la MSP utilizando el PID default del Kernel (ver aclaración más arriba), y no el PID indicado por el TCB en cuestion.
+* ~~Cuando la CPU reciba un TCB en modo Kernel (KM activado) deberá realizar todas las **lecturas/escrituras** sobre la MSP utilizando el PID default del Kernel (ver aclaración más arriba), y no el PID indicado por el TCB en cuestion.~~ `Editado el 16/11/2014, ver aclaración más arriba`.
 
 * Páginas 15, 16: En la sección de *Archivo de Configuración*, falta agregar un parametro:
 
