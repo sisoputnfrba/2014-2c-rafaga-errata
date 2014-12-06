@@ -1,6 +1,11 @@
 Ráfaga - Fe de errata
 =====================
 
+### 06/12/2014
+
+* `WAIT` Toma el valor apuntado por el registro B y evalúa si este contador es negativo o cero. De serlo, invoca a la operación de BLOK; de lo contrario, resta una unidad y guarda en la memoria correspondiente el nuevo valor. Altera el registro A por uso interno.
+
+
 ### 16/11/2014
 
 * La segunda aclaracion del 03/11/2014 esta incompleta, debería leerse asi: Cuando la CPU reciba un TCB en modo Kernel (KM activado) deberá realizar todas las **lecturas/escrituras** sobre la MSP utilizando el PID default del Kernel (ver aclaración más arriba), y no el PID indicado por el TCB en cuestion. **Las unicas excepciones son OUTC e INNC, que actuan sobre la memoria del proceso de usuario que invocó la llamada al sistema.**
